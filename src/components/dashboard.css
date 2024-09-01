@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+  --color-primary: #73040f;
+  --color-secondary: #f8f2f3;
+  --color-tertiary: #500404;
+  --color-quaternary: #aba3a4;
+  --color-five: #696566;
+}
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-secondary);
+  background: var(--color-secondary);
+}
+
+header {
+  padding: 30px;
+  background: linear-gradient( var(--color-primary), var(--color-tertiary));
+  height: 40px;
+  border-bottom: 5px solid var(--color-quaternary);
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+  border-radius: 6px;
+  background-color: var(--color-tertiary);
+  border: 3px solid var(--color-quaternary);
+}
+.menu-btn:hover {
+  color: var(--color-quaternary);
+}
+.logo {
+  margin-top: 10px;
+  flex-grow: 1;
+  text-align: center;
+  width: 150px;
+}
+.logout a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: var(--color-tertiary);
+  border: 3px solid var(--color-quaternary);
+}
+.logout a:hover {
+  color: var(--color-quaternary);
+}
+
+.sidenav {
+  width: 20vh;
+  background: linear-gradient( var(--color-five), var(--color-quaternary));
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  left: 0;
+  transition: all 1s ;
+  
+}
+.sidenav.active {
+  left: -100%;
+}
+
+ul {
+  padding: 0;
+  
+}
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+ul li a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+ul li a:hover,
+ul li a.active {
+  background: var(--color-tertiary);
+}
+ul li a svg {
+  margin-right: 10px;
+}
+
+header svg {
+  font-size: 40px;
+}
+
+.main {
+  height: 90vh;
+}
